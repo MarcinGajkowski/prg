@@ -6,12 +6,13 @@ auto main() -> int
     while (true)
     {
     	auto password = std::string{};
+	
     	std::cout << "password: ";
     	std::getline(std::cin, password);
     	
     	if (password == "student")
     	{
-    		std::cout << "ok!\n";
+		std::cout << "ok!\n";
     		break;
     	}
     }
