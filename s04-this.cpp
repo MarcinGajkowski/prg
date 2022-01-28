@@ -1,22 +1,18 @@
 #include <iostream>
 
-struct ThisLikeThat
+struct This
 {
-public:
-	int that;
-	ThisLikeThat& PrintThis(int that)
-	{
-		that = that * 5;
-		return *this;
-		std::cout << "\n";
-	}
+    void ThatOne()
+    {
+        This* that = this;
+        std::cout << that << '\n';
+    }
 };
 
 int main()
 {
-	int yomum = 4;
-	ThisLikeThat yope{ 5 };
-	yope.PrintThis(yomum);
-	std::cout << &yope << "\n";
-	return 0;
+    This thos;
+    thos.ThatOne();
+    std::cout << &thos << '\n';
+    return 0;
 }
